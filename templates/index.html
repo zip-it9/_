@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zip-it</title>
+    <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <nav>
+        <h1>Zip-it</h1>
+        <button id="coffee">Buy me a coffee</button>
+    </nav>
+    <form action="/compress" method="post" enctype="multipart/form-data">
+        <input type="file" name="files[]" multiple>
+        <button id="compress" type="submit">Compress Files</button>
+    </form>
+</body>
+</html>
